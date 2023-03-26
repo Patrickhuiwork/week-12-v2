@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import BarChart from '@/components/BarChart'
+import RadarChart from '@/components/RadarChart'
+import LineChart from '@/components/LineChart'
 
 export default function Home() {
   return (
@@ -14,7 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h1>Dashboard</h1>
         <BarChart/>
+        <RadarChart/>
+        <LineChart/>
       </main>
     </>
   )
