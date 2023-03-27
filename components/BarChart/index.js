@@ -32,11 +32,11 @@ export default function BarChart() {
     useEffect(() => {
 
         setChartData({
-            labels: ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"],
+            labels: ["Standard milk", "Milk 2%", "Skim milk", "Buttermilk", "Chocolate and other flavoured milk", "Cereal cream", "Whipping cream", "Sour cream", "Milk 1%"],
             datasets: [
                 {
-                    label: 'Sales $',
-                    data: [15323,25000,10000,12000,13000,16000,11000],
+                    label: 'Kilolitres',
+                    data: [6776,11446,1173,237,905,1281,520,84,3024],
                     borderColor: 'rgb(53,162,235',
                     backgroundColor: 'rgba(53,162,235,0.4)'
                 }
@@ -50,7 +50,7 @@ export default function BarChart() {
                 },
                 title: {
                     display: true,
-                    text: "Daily Revenue"
+                    text: "Commercial sales of milk and cream, British Columbia December 2022"
                 }
             },
             maintainAspectRatio: false,

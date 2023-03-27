@@ -7,11 +7,11 @@ ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, 
 
 export default function RadarChart() {
   const [chartData, setChartData] = useState({
-    labels: ['Thing 1', 'Thing 2', 'Thing 3', 'Thing 4', 'Thing 5', 'Thing 6'],
+    labels: ['On all cattle operations', 'On dairy operations', 'On beef operations', 'On cow calf operations', 'On feeder and stocker operations', 'On feeding operations'],
     datasets: [
       {
-        label: '# of Votes',
-        data: [2, 9, 3, 5, 2, 3],
+        label: '# of cattle',
+        data: [565, 152, 413, 346, 50, 17],
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgba(255, 99, 132, 1)',
         borderWidth: 1,
@@ -29,7 +29,7 @@ export default function RadarChart() {
         },
         title: {
           display: true,
-          text: 'Vote Count',
+          text: 'Number of cattle, by class and farm type in British Columbia 2023',
         },
       },
       maintainAspectRatio: false,
