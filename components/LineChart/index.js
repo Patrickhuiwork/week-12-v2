@@ -36,17 +36,17 @@ export default function LineChart() {
     useEffect(() => {
 
         setChartData({
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["September", "October", "Novemeber", "December", "January"],
             datasets: [
                 {
-                    label: 'Dataset 1',
-                    data: [65, 59, 80, 81, 56, 55, 40],
+                    label: 'American-plated Motercycles entering Canada',
+                    data: [926, 413, 86, 41, 99],
                     borderColor: 'rgb(53,162,235)',
                     backgroundColor: 'rgba(53,162,235,0.4)'
                 },
                 {
-                    label: 'Dataset 2',
-                    data: [28, 48, 40, 19, 86, 27, 90],
+                    label: 'Canadian-plated Motercycles entering Canada',
+                    data: [5111, 3401, 806, 90, 81],
                     borderColor: 'rgb(255,99,132)',
                     backgroundColor: 'rgba(255,99,132,0.4)'
                 }
@@ -60,7 +60,7 @@ export default function LineChart() {
                 },
                 title: {
                     display: true,
-                    text: "Chart.js Line Chart"
+                    text: "Motercycles entering Canada by land, by vehicle type and licence plate 2022"
                 }
             },
             maintainAspectRatio: false,
